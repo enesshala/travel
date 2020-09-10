@@ -1,0 +1,275 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 100vh;
+      background: url('../img/hero.jpg') no-repeat 50% 50%;
+      background-size: cover;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+      z-index: 2;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+.presentation{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 45px;
+      color: #fff;
+      transition: all 1s;
+}
+
+.presentation:hover{
+      left: 51%;
+}
+
+/* content */
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.row{
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+}
+
+.card{
+      height: 500px;
+      width: 300px;
+}
+
+.card img{
+      width: 150px;
+      height: 150px;
+}
+
+.activities{
+      width: 80%;
+      padding: 40px;
+      margin: 0 auto;
+}
+
+.info{
+      padding-right: 20px;
+}
+
+.images img{
+      width: 49%;
+}
+
+/* booking */
+.contact-section{
+      background: #313840;
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    .inner-width{
+      max-width: 600px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    
+    .contact-section h1{
+      font-size: 20px;
+      color: #888;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 400;
+    }
+    
+    .name,.email,.message{
+      background: none;
+      border:none;
+      outline: none;
+      border-bottom: 1px solid;
+      color: #888;
+      padding: 10px 6px;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+    
+    .name{
+      float: left;
+      width: 270px;
+    }
+    
+    .email{
+      float: right;
+      width: 270px;
+    }
+    
+    .message{
+      min-width: 100%;
+      max-width: 100%;
+    }
+    
+    
+    .contact-section button{
+      background: none;
+      color: #70a1ff;
+      border: 1px solid #70a1ff;
+      padding: 12px 40px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-size: 14px;
+      transition: 0.4s linear;
+      cursor: pointer;
+    }
+    
+    .contact-section button:hover{
+      background: #70a1ff;
+      color: #fff;
+    }
+    
+    
+    @media screen and (max-width:600px){
+      .name,.email{
+        width: 100%;
+      }
+    }
+
+/* Footer */
+.footer{
+      position: relative;
+      margin-top: 50px;
+      
+  }
+  .footer .footer-bottom{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-top: 20px;
+      width: 100%;
+      background: #343a40;
+      color: #999;
+      height: 50px;
+      text-align: center;
+  }
+
+@media(max-width: 786px) {
+      .row{
+            flex-direction: column;
+            width: 100%;
+      }
+      .card{
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            margin: 0 auto;
+      }
+      .presentation{
+            font-size: 35px;
+      }
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+      .images img{
+            width: 100%!important;
+      }
+
+}
